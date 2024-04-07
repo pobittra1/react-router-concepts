@@ -1,10 +1,16 @@
 import { useLoaderData } from "react-router-dom";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate , useParams } from "react-router-dom";
 const PostDetails = () => {
   const post = useLoaderData();
   const navigate = useNavigate();
   const { title, body } = post;
 
+  // use of useParams----------
+  const {postId} = useParams()
+  
+  //console.log(params)
+  console.log(postId)
+  // use of useNavigate
   // const handleGoBack = () => {
   //   navigate(-1);
   // }; i do this operation or do direct annonymous function operation
