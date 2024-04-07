@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Header from "../Header/Header";
-import User from "../User/User";
+
 
 
 const Home = () => {
@@ -15,6 +15,7 @@ const Home = () => {
         <div> 
             <h2 style={headingStyle}>this is home</h2>
             <Header></Header>
+            <p>this is home</p>
             <Outlet></Outlet>
         </div>
     );
