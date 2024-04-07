@@ -9,12 +9,14 @@ import Users from "./components/Users/Users";
 import Posts from "./components/Posts/Posts";
 import UserDetails from "./components/UserDetails/UserDetails";
 import PostDetails from "./components/PostDetails/PostDetails";
+import ErrorPage from "./components/ErrorPage/ErrorPage";
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home></Home>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/contact",
