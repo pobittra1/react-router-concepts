@@ -3,10 +3,12 @@ import "./Header.css"
 
 const Header = () => {
     return (
-        <ul className=".headingStyle border bg-green-500">
+        <ul className=" flex gap-4 border bg-green-500">
             <li><NavLink to={'/'}>Home</NavLink></li>
-            <li><NavLink to={'/about'}>about</NavLink></li>
             <li><NavLink to={'/contact'}>contact</NavLink></li>
+            <li><NavLink to={'/about'}>about</NavLink></li>
+            <li><NavLink to={'/users'}>users</NavLink></li>
+            <li><NavLink to={'/posts'}>posts</NavLink></li>
         </ul>
     );
 };
